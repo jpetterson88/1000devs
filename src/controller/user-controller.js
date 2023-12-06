@@ -1,11 +1,12 @@
-const calculaIdade =(req, res) => {
+const calculaIdade = (req, res) => {
   const hoje = new Date(Date.now())
-  const nascimento = new Date("1984-11-28")
+  const nascimento = new Date("1988-05-08")
   const idade = hoje.getFullYear() - nascimento.getFullYear()
+
   res.json({
-      "nome": "Leonardo",
+      "nome": "leonardo",
       "cidade": "Vitoria ES",
-      "profissao": "Programador",
+      "profissao": "programador",
       "nascimento": idade
   })
 }
